@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Baihui</string>
+
+    <string name="rd_homepage">首页</string>
+    <string name="rd_store">店铺</string>
+    <string name="rd_trolley">购物车</string>
+    <string name="rd_service">服务</string>
+    <string name="rd_mine">我</string>
+    <string name="text_point_out_once_again">再次点击退出应用</string>
+
+</resources>

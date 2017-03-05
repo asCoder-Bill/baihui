@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/convenientBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+                    app:canLoop="true" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70px">
+
+                    <ImageView
+                        android:id="@+id/iv_index_scan"
+                        android:layout_width="46px"
+                        android:layout_height="46px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:src="@mipmap/ic_scan" />
+
+                    <EditText
+                        android:id="@+id/ev_search_condition"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="516px"
+                        android:layout_height="56px"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@mipmap/search"
+                        android:gravity="center_vertical"
+                        android:hint="请输入你想要的商品"
+                        android:textSize="30px" />
+
+                    <ImageView
+                        android:id="@+id/iv_index_location"
+                        android:layout_width="46px"
+                        android:layout_height="46px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:src="@mipmap/address" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="197px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_category_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/garment"
+                        android:gravity="center"
+                        android:padding="15px"
+                        android:text="服装"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_category_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/supermarket"
+                        android:gravity="center"
+                        android:padding="15px"
+                        android:text="超市"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_category_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/recharge"
+                        android:gravity="center"
+                        android:padding="15px"
+                        android:text="充值"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_category_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/travel"
+                        android:gravity="center"
+                        android:padding="15px"
+                        android:text="旅游"
+                        android:textSize="30px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="197px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_category_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/food"
+                        android:gravity="center"
+                        android:padding="15px"
+                        android:text="美食"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_category_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/recreation"
+                        android:gravity="center"
+                        android:padding="15px"
+                        android:text="娱乐"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_category_7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/hotel"
+                        android:gravity="center"
+                        android:padding="15px"
+                        android:text="酒店"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_category_8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/bearty"
+                        android:gravity="center"
+                        android:padding="15px"
+                        android:text="丽人"
+                        android:textSize="30px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="480px"
+                android:layout_marginTop="20px">
+
+                <ImageView
+                    android:id="@+id/iv_custom1"
+                    android:layout_width="0dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff" />
+
+                <!--<com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1px"
+                    android:layout_weight="1"
+                    android:background="#ffffff">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_title_info1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="迎新气质初春"
+                            android:textColor="#333333"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/tv_info1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20px"
+                            android:text="全场4.5折起"
+                            android:textColor="#666666"
+                            android:textSize="24px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <ImageView
+                        android:layout_width="330px"
+                        android:layout_height="330px"
+                        android:layout_below="@+id/ll_title_info1"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ic_launcher" />
+                </com.zhy.autolayout.AutoRelativeLayout>-->
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_custom2"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+                    <ImageView
+                        android:id="@+id/iv_custom3"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+                    <ImageView
+                        android:id="@+id/iv_custom4"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+
+                    <!--<com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:padding="20px">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/ll_title_info2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="迎新气质初春"
+                                android:textColor="#333333"
+                                android:textSize="30px" />
+
+                            <TextView
+                                android:id="@+id/tv_info2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20px"
+                                android:text="全场4.5折起"
+                                android:textColor="#666666"
+                                android:textSize="24px" />
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <ImageView
+                            android:layout_width="110px"
+                            android:layout_height="110px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="1px"
+                        android:layout_marginTop="1px"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:padding="20px">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/ll_title_info3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_title3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="迎新气质初春"
+                                android:textColor="#333333"
+                                android:textSize="30px" />
+
+                            <TextView
+                                android:id="@+id/tv_info3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20px"
+                                android:text="全场4.5折起"
+                                android:textColor="#666666"
+                                android:textSize="24px" />
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <ImageView
+                            android:layout_width="110px"
+                            android:layout_height="110px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:padding="20px">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/ll_title_info4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_title4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="迎新气质初春"
+                                android:textColor="#333333"
+                                android:textSize="30px" />
+
+                            <TextView
+                                android:id="@+id/tv_info4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20px"
+                                android:text="全场4.5折起"
+                                android:textColor="#666666"
+                                android:textSize="24px" />
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <ImageView
+                            android:layout_width="110px"
+                            android:layout_height="110px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher" />
+                    </RelativeLayout> -->
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:gravity="center_vertical"
+                android:paddingLeft="20px"
+                android:text="附近店铺"
+                android:textColor="#333333"
+                android:textSize="32px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_browse_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="浏览次数"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/tv_the_closest"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="距离最近"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/tv_best_selling"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="销量最高"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:background="#f5f5f5"
+                android:id="@+id/id_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#ffff0000"
+                android:dividerHeight="10dp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyAppTheme" parent="android:style/Theme.Light.NoTitleBar">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!-- RecylerView的分隔线 -->
+        <!--<item name="android:listDivider">@drawable/divider_bg</item>-->
+    </style>
+
+
+
+    <!-- 下方RadioButton的样式 -->
+    <style name="MyRadioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@drawable/selector_main_radiobtn_textcolor</item>
+        <item name="android:background">@drawable/selector_main_radiobtn_pressbg</item>
+    </style>
+
+    <!-- EditText的style -->
+    <style name="MyEditTextStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">20px</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textColorHint">#333333</item>
+    </style>
+
+    <!-- 星星评分条 -->
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_rating_bar_full</item>
+        <item name="android:minHeight">32px</item>
+        <item name="android:maxHeight">32px</item>
+    </style>
+
+</resources>
